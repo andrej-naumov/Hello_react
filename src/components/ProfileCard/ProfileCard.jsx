@@ -1,8 +1,7 @@
 import './styles.css';
 
-import {profile} from './data';
+import {profile, normalizedName} from './data';
 
-const normalizedName = () => { return `${profile.firstName} ${profile.lastName}` };
 
 
 function ProfileCard() {
