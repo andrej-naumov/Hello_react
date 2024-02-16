@@ -1,0 +1,19 @@
+.App {
+  display: flex;
+  flex: 1;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.car-card {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: fit-content;
+  border: 1px solid red;
+  padding: 30px;
+  margin: 20px;
+}
