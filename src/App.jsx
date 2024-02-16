@@ -1,6 +1,8 @@
 import './App.css';
 import Button from './components/Button/Button';
-import {ProfileCard} from './components/ProfileCard/ProfileCard';
+import { ProfileCard } from './components/ProfileCard/ProfileCard';
+import Homework18 from './homeworks/Homework18/Homework18';
+import Lesson18 from './lessons/Lesson18/Lesson18';
 
 function App() {
 
@@ -19,7 +21,8 @@ function App() {
       <img src="https://www.topgear.com/sites/default/files/2023/03/1%20Volvo%20XC90.jpg" alt="" />
       </div>*/}
 
-      <ProfileCard /><ProfileCard /><ProfileCard />
+      <Lesson18 />
+      <Homework18 />
 
     </div>
 
