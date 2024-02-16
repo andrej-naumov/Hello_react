@@ -17,4 +17,4 @@ function ProfileCard() {
     );
 }
 
-export default ProfileCard;
+export  {ProfileCard}

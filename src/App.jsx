@@ -1,6 +1,6 @@
 import './App.css';
 import Button from './components/Button/Button';
-import ProfileCard from './components/ProfileCard/ProfileCard';
+import {ProfileCard} from './components/ProfileCard/ProfileCard';
 
 function App() {
 
