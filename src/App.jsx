@@ -1,7 +1,6 @@
 import './App.css';
 import Button from './components/Button/Button';
-import { ProfileCard } from './components/ProfileCard/ProfileCard';
-import Homework18 from './homeworks/Homework18/Homework18';
+import ProfileCard from './components/ProfileCard/ProfileCard';
 import Lesson18 from './lessons/Lesson18/Lesson18';
 
 function App() {
@@ -22,7 +21,6 @@ function App() {
       </div>*/}
 
       <Lesson18 />
-      <Homework18 />
 
     </div>
 

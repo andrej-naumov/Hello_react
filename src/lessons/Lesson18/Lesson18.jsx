@@ -1,12 +1,15 @@
 import ProfileCard from "../../components/ProfileCard/ProfileCard";
+import './styles.css';
 
 function Lesson18() {
     return (
-        <div>
+        <div className="profile-cards">
             <ProfileCard />
             <ProfileCard />
             <ProfileCard />
-        </div>);
+        </div>
+
+    );
 }
 
 export default Lesson18;
