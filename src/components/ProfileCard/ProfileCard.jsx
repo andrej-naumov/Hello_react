@@ -1,18 +1,14 @@
 import './styles.css';
 
-import {profile, normalizedName} from './data';
-
-
-
-function ProfileCard() {
+function ProfileCard({profileInfo}) {
     return (
         <div className="profile-card">
-            <img src={profile.src} alt="Аватар" />
-            {/* <h2>{profile.firstName} {profile.lastName}</h2> */}
-            <h2 className={(profile.age) > 50 ? "senior" : "junior"}>{normalizedName()}</h2>
-            <p>Работа - {profile.job}</p>
-            <p>Цвет волос: {profile.hairColor}, Рост: {profile.height}</p>
-            <p>Хобби: {profile.hobby}</p>
+            <img src={profileInfo.src} alt="Аватар" />
+            <h2 className={(profileInfo.age) > 50 ? "senior" : "junior"}>{profileInfo.firstName} {profileInfo.lastName}</h2>
+            {/* <h2 className={(profileInfo.age) > 50 ? "senior" : "junior"}>{normalizedName()}</h2> */}
+            <p>Работа - {profileInfo.job}</p>
+            <p>Цвет волос: {profileInfo.hairColor}, Рост: {profileInfo.height}</p>
+            <p>Хобби: {profileInfo.hobby}</p>
         </div>
     );
 }
