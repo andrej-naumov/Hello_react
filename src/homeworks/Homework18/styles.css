@@ -1,0 +1,6 @@
+.background {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../../../public/media/img/DSCF9645-111.jpg');
+    background-size: cover;       
+}

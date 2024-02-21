@@ -1,6 +1,12 @@
-function Homework18() {
+import "./styles.css";
+import LoginForm from "../../components/LoginForm/LoginForm";
 
-    return (<p>Hello Homework18</p>);
+function Homework18() {
+  return (
+    <div className="background">               
+      <LoginForm />
+    </div>
+  );
 }
 
 export default Homework18;
