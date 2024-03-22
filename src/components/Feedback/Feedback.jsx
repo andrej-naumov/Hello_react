@@ -24,15 +24,15 @@ function Feedback() {
 
   return (
     <div>
-      <div className="mb-3"> {/* Добавляем отступ снизу с помощью класса bootstrap */}
+      <div className="mb-3"> 
         <Icon path={mdiThumbUp} size={3} onClick={handleLikeClick} />
         <span className="likes-counter">{likes}</span>
       </div>
-      <div className="mb-3"> {/* Добавляем отступ снизу с помощью класса bootstrap */}
+      <div className="mb-3"> 
         <Icon path={mdiThumbDown} size={3} onClick={handleDislikeClick} />
         <span className="likes-counter">{dislikes}</span>
       </div>
-      <button onClick={handleResetClick} className="btn btn-primary mb-3"> {/* Добавляем отступ снизу с помощью класса bootstrap */}
+      <button onClick={handleResetClick} className="btn btn-primary mb-3"> 
         <Icon path={mdiRefresh} size={1} />
         Reset Results
       </button>
