@@ -1,5 +1,5 @@
 export const incrementLikes = () => {
-    return { type: 'INCREMENT_LIKES' } as const;
+    return { type: 'INCREMENT_LIKES', payload: 0 } as const;
   };
   
   export const incrementDislikes = () => {

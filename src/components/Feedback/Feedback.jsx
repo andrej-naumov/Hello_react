@@ -4,6 +4,7 @@ import { incrementLikes, incrementDislikes, resetResults } from './actions.ts';
 import Icon from '@mdi/react';
 import { mdiThumbDown, mdiThumbUp, mdiRefresh } from '@mdi/js'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import MyAnyComponent from './MyAnyComponent.jsx';
 
 function Feedback() {
   const likes = useSelector(state => state.likes);
@@ -11,7 +12,7 @@ function Feedback() {
   const dispatch = useDispatch();
 
   const handleLikeClick = () => {
-    dispatch(incrementLikes());
+    dispatch({ type: 'INCREMENT_LIKES', payload: 10 });
   };
 
   const handleDislikeClick = () => {
@@ -26,6 +27,7 @@ function Feedback() {
     <div>
       <div className="mb-3"> 
         <Icon path={mdiThumbUp} size={3} onClick={handleLikeClick} />
+        <MyAnyComponent />
         <span className="likes-counter">{likes}</span>
       </div>
       <div className="mb-3"> 

@@ -16,9 +16,13 @@ type FeedbackState = {
   };
   
   const feedbackReducer = (state: FeedbackState = initialState, action: FeedbackAction): FeedbackState => {
+
+
+
     switch (action.type) {
       case 'INCREMENT_LIKES':
-        return { ...state, likes: state.likes + 1 };
+        console.log(action);
+        return { ...state, likes: state.likes + action.payload };
       case 'INCREMENT_DISLIKES':
         return { ...state, dislikes: state.dislikes + 1 };
       case 'RESET_RESULTS':
